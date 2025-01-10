@@ -38,11 +38,8 @@ public class order_detailEN {
         this.pro = pro;
     }
 
-    @Column(name = "price")
-    private float price;
-
     @Column(name = "amount")
-    private float amount;
+    private int amount;
 
     public int getId() {
         return this.id;
@@ -60,21 +57,12 @@ public class order_detailEN {
         this.order = order;
     }
 
-
-
-    public float getPrice() {
-        return this.price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
     
-    public float getAmount() {
+    public int getAmount() {
         return this.amount;
     }
 
-    public void setAmount(float amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

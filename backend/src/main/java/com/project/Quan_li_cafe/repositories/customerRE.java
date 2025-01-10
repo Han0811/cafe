@@ -8,5 +8,6 @@ import com.project.Quan_li_cafe.models.customerEN;
 
 @Repository
 public interface customerRE extends JpaRepository<customerEN, Long>{
+    customerEN findById(int id);
     customerEN findByPhone(String phone);
 }

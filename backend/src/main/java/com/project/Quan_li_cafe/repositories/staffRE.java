@@ -7,5 +7,5 @@ import com.project.Quan_li_cafe.models.staffEN;
 
 @Repository
 public interface staffRE extends JpaRepository<staffEN, Long> {
-
+    staffEN findById(int id);
 }

@@ -3,6 +3,7 @@ package com.project.Quan_li_cafe.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import com.project.Quan_li_cafe.dtos.customerDTO;
 import com.project.Quan_li_cafe.repositories.customerRE;
 import com.project.Quan_li_cafe.service.customer.customerSE;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/custom")
 public class customerCO {

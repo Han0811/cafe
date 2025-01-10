@@ -13,4 +13,5 @@ import com.project.Quan_li_cafe.models.productEN;
 public interface productRE extends JpaRepository<productEN, Long>{
 productEN findByName(String name);
 List<productEN> findByCategory_Id(int id);
+productEN findById(int id);
 }

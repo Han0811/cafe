@@ -10,18 +10,8 @@ import lombok.Setter;
 @Setter
 @Getter
 public class orderdetailDTO {
-    private oderEN id_order;
     private productEN id_pro;
-    private float price;
     private int amount;
-
-    public oderEN getId_order() {
-        return this.id_order;
-    }
-
-    public void setId_order(oderEN id_order) {
-        this.id_order = id_order;
-    }
 
     public productEN getId_pro() {
         return this.id_pro;
@@ -29,14 +19,6 @@ public class orderdetailDTO {
 
     public void setId_pro(productEN id_pro) {
         this.id_pro = id_pro;
-    }
-
-    public float getPrice() {
-        return this.price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
     }
 
     public int getAmount() {

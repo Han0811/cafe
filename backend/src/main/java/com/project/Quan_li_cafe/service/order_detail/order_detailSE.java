@@ -18,20 +18,19 @@ public class order_detailSE {
     private order_detailRE order_detailRE;
 
     // Thêm mới
-    public order_detailEN addOrderDetail(orderdetailDTO dto) {
-        order_detailEN orderDetail = new order_detailEN();
-        orderDetail.setOrder(dto.getId_order());
-        orderDetail.setPro(dto.getId_pro());
-        orderDetail.setPrice(dto.getPrice());
-        orderDetail.setAmount(dto.getAmount());
-        return order_detailRE.save(orderDetail);
-    }
+    // public order_detailEN addOrderDetail(orderdetailDTO dto) {
+    //     order_detailEN orderDetail = new order_detailEN();
+    //     orderDetail.setOrder(dto.getId_order());
+    //     orderDetail.setPro(dto.getId_pro());
+    //     orderDetail.setAmount(dto.getAmount());
+    //     return order_detailRE.save(orderDetail);
+    // }
 
-    public void deleteOrderDetail(int id) {
-        order_detailRE.deleteById(Long.valueOf(id));
-    }
+    // public void deleteOrderDetail(int id) {
+    //     order_detailRE.deleteById(Long.valueOf(id));
+    // }
 
-    public List<order_detailEN> getAllOrderDetails() {
-        return order_detailRE.findAll();
-    }
+    // public List<order_detailEN> getAllOrderDetails() {
+    //     return order_detailRE.findAll();
+    // }
 }

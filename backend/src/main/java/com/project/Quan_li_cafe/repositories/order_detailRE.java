@@ -15,7 +15,6 @@ import com.project.Quan_li_cafe.models.productEN;
 
 @Repository
 public interface order_detailRE extends JpaRepository<order_detailEN, Long> {
-       
-
+    order_detailEN findById(int id);
 }
 
